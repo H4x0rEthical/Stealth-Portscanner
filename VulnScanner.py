@@ -35,7 +35,7 @@ def ScanVuln(Target):
              print(f"Port: {port}, State: {Scan[host][proto][port]['state']}, Service: {Scan[host][proto][port]['name']}")
 
 
-target = "wiesgeerts.be"
+target = "<IP>"
 match Choice:
     case "1":
         Scan(target)
