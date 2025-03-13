@@ -1,10 +1,9 @@
 import nmap
-import threading
 
 print("1. Scan\n2.ScanVuln(scans for known vulns)\n")
 print("If it prints nothing it means there is probably nothing open!\n")
 Choice = input("Enter your choice: ")
-
+target = input("Enter your target's ip: ")
 
 def Scan(Target):
     Scan = nmap.PortScanner()
